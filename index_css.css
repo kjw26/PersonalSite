@@ -1,0 +1,72 @@
+﻿  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+    height: 100%;
+    color: #ffffff;
+    line-height: 1.8;
+    }
+
+    .grey{
+    color:#777;
+    }
+
+
+    /* Create a Parallax Effect */
+    .bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(desk.jpg);
+    min-height: 100%;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    /*Overwrite the existing css so that my name displays at 60% from the top rather than 50%*/
+    #home-img{
+    top: 40%;
+    width: 22%;
+    overflow:hidden;
+    }
+    #detaildiv{
+    top: 64%;
+    }
+
+
+
+
+    /* center the image inside of the column in About Me section */
+
+    #profile-col{
+    height: 610px;
+    }
+
+    #profile{
+    vertical-align: middle;
+    }
+
+    .helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    }
+
+    /* center navbar elements */
+    #myNavbar{
+    text-align:center;
+    }
+    .center-nav-elements {
+    float: none!important;
+    display: inline-block!important;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+    .bgimg-1{
+    background-attachment: scroll;
+    }
+
+  </style>
+
