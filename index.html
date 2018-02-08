@@ -1,150 +1,99 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Khadir Williams</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-    <link href="index_css.css" rel="stylesheet" type="text/css" />
-    <script src="index_js.js"></script>
+  <title>Khadir Williams</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	body {
+		font: 20px Montserrat, sans-serif;
+		line-height: 1.8;
+		font-size: 12px;
+		letter-spacing: 3px;
+		color: #E9F1F7;
+	}
+
+	h3{
+		margin-top:25px;
+	}
+
+	.align{
+		vertical-align:20%;
+	}
+
+	.bgimg-1{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		background-image: url(desk.jpg);
+	}
+	
+	.color-overlay{
+		height:100%;
+		width:100%;
+		background-color: rgba(19,27,35,0.9);
+	}
+	
+	.non-transparent{
+		opacity: 1.0;
+	}
+
+	.container-fluid{
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.navbar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+		letter-spacing: 5px;
+		background-color: rgba(19,27,35,0.03);
+		/*color:#E9F1F7;*/
+		color: rgba(233,241,247,1);
+		width: 100%;
+	}
+	.navbar-nav  li a:hover {
+		color: #1abc9c !important;
+	}
+  </style>
 </head>
-
 <body>
-    <div class="w3-top">
-        <div class="w3-bar center-nav" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="#home" class="w3-bar-item w3-button center-nav-elements">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small center-nav-elements"><i class="fa fa-user"></i>ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small center-nav-elements"><i class="fa fa-th"></i>PORTFOLIO</a>
-            <a href="#resume" class="w3-bar-item w3-button w3-hide-small center-nav-elements"><i class="fa fa-file"></i>RESUME</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small center-nav-elements"><i class="fa fa-envelope"></i>CONTACT</a>
-        </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        </div>
+<!-- Navbar -->
+
+<!-- First Container -->
+<div class="container-fluid bgimg-1 text-center">
+  <div class="color-overlay">
+
+		<nav class="navbar navbar-default ">
+		  <div class="container">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Khadir Williams</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">RESUME</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+		<div class="non-transparent">
+			<img src="profile.jpg" class="img-responsive img-circle align" style="display:inline;" alt="Bird" width="350" height="350">
+			<h3>Student, Programmer, Web Developer</h3>
+		</div>
+	
     </div>
+</div>
 
-    <div class="bgimg-1 w3-display-container w3-grey" id="home">
-        <div class="w3-display-middle w3-circle " style="white-space: nowrap;" id="home-img">
-            <img src="profile.jpg" class="w3-image" id="home-pic"alt="Photo of Me" style= "width:100%">
-        </div>
-        <div class="w3-display-middle" style="white-space: nowrap;" id="detaildiv">
-        </div>
-    </div>
-
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center grey">MISSION STATEMENT</h3>
-        <p class="w3-center grey"><em>yadda yadda yadda</em></p>
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large" id="profile-col">
-                <span class="helper"></span>
-                <img src="profile.jpg" class="w3-round w3-center w3-image" id="profile" alt="Photo of Me" width="400" height="400">
-            </div>
-
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <h3 class="w3-center grey">ABOUT ME</h3>
-                <p class="grey" style="text-indent: 25px;">
-                    Hello there! My name is Khadir Williams and I am an aspiring Computer Scientist finishing up my bachelor's degree at the New Jersey Institue of Technology. My journey in Computer Science began 
-                in highschool in web and desktop publishing elective. In that class, I was taught the very basics of web development through HTML and CSS. I was fascinated at how HTML tags and CSS stylings 
-                could produce a webpage. I think of it as my first look under the hood of the car of web development. I knew from class that HTML and CSS are the engine that drives the development of web pages,
-                but I wanted to be able to make my own car, and not just tinker around with the little knowledge I had of the engine. After that experience, I commited to three years of Computer Science in my 
-                high school's Computer Science elective program. In those years I was exposed to Python, Java, the Alice environment, Visual Basic, and Android App Development using AppInventor. My experiences 
-                with Computer Science in high school taught me a lot about myself and my passions. I love to create! Whether it be software, a website, a group project, or just a code snippet that 
-                contributes to a larger project, I take a lot pride and joy in my work and love watching it motion. Here on this site, I hope to show off some of my work and passion to the world.
-                </p>
-            </div>
-        </div>
-        <blockquote class="w3-leftbar w3-light-grey">
-            <p class="w3-large">
-                <i>"...if one advances confidently in the direction of his dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours."</i>
-            </p>
-            <p>Henry David Thoreau</p>
-        </blockquote>
-    </div>
-
-    <!-- Container (Portfolio Section) -->
-    <div class=" w3-container w3-padding-64 w3-dark-gray" id="portfolio">
-        <h3 class="w3-center">MY PROJECTS</h3>
-        <p class="w3-center"><em>Here are my highlighted projects. To see more of my work, b<br>
-            Click on the images to make them bigger</em></p>
-        <br>
-    </div>
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-    </div>
-
-    <div class=" w3-container w3-padding-64" id="resume">
-        <h3 class="w3-center">MY RESUME</h3>
-        <p class="w3-center">
-            <em>Here are my highlighted projects. To see more of my work, b<br>
-                Click on the images to make them bigger</em>
-        </p>
-        <br>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div class="w3-container w3-padding-64 w3-dark-grey" id="contact">
-        <h3 class="w3-center">WHERE I WORK</h3>
-        <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
-                <!-- Add Google Maps -->
-                <div id="googleMap" class="w3-round-large w3-greyscale" style="width: 100%; height: 400px;"></div>
-            </div>
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Chicago, US<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: +00 151515<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: mail@mail.com<br>
-                </div>
-                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i>SEND MESSAGE
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
 </body>
+</html>

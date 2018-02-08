@@ -1,25 +1,25 @@
-<<<<<<< HEAD:index_css.css
-﻿  <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+<style>
     body, html {
     height: 100%;
-    color: #ffffff;
+	font: 20px Montserrat, sans-serif;
     line-height: 1.8;
+    color: #f5f6f7;
     }
 
-    .grey{
-    color:#777;
-    }
-
+	.container-fluid {
+    padding-bottom: 70px;
+  }
 
     /* Create a Parallax Effect */
     .bgimg-1{
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(desk.jpg);
-    min-height: 100%;
+    }
+
+    .color-schema1{
+      background-color:#2274A5;
+      color:#ffffff;
     }
 
     .w3-wide {letter-spacing: 10px;}
