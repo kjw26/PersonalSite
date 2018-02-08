@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -20,11 +21,24 @@
 	h3{
 		margin-top:25px;
 	}
-
-	.align{
-		vertical-align:20%;
+	
+	footer{
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
-
+	
+	.media-glyph{
+		padding: 7px;
+		font-size:24px;
+	}
+	
+	.media-links{
+		color:#E9F1F7;
+	}
+	
 	.bgimg-1{
 		background-position: center;
 		background-repeat: no-repeat;
@@ -37,10 +51,6 @@
 		height:100%;
 		width:100%;
 		background-color: rgba(19,27,35,0.9);
-	}
-	
-	.non-transparent{
-		opacity: 1.0;
 	}
 
 	.container-fluid{
@@ -56,11 +66,15 @@
 		margin-bottom: 0;
 		letter-spacing: 5px;
 		background-color: rgba(19,27,35,0.03);
-		/*color:#E9F1F7;*/
-		color: rgba(233,241,247,1);
+		color:#E9F1F7;
 		width: 100%;
 	}
-	.navbar-nav  li a:hover {
+	
+	.navbar-nav  li a:hover, .navbar-header a:hover, a:hover {
+		color: #1abc9c !important;
+	}
+	
+	.media-links:hover{
 		color: #1abc9c !important;
 	}
   </style>
@@ -87,11 +101,18 @@
 		  </div>
 		</nav>
 		
-		<div class="non-transparent">
-			<img src="profile.jpg" class="img-responsive img-circle align" style="display:inline;" alt="Bird" width="350" height="350">
+		<div class="container-fluid" style="display:inline-block; padding-top:110px;">
+			<img src="profile.jpg" class="img-responsive img-circle" style="display:inline;" alt="Bird" width="350" height="350">
 			<h3>Student, Programmer, Web Developer</h3>
 		</div>
 	
+		
+		<footer>
+			<a href="https://www.linkedin.com/in/khadirwilliams" class="media-links"><i class="fa fa-linkedin-square media-glyph"></i></a>
+			<a href="https://github.com/kjw26" class="media-links"><i class="fa fa-github-square media-glyph"></i></a>
+			<a href="https://twitter.com/Khadir_Williams" class="media-links"><i class="fa fa-twitter-square media-glyph"></i></a>
+			<a href="https://www.instagram.com/khadirwilliams" class="media-links"><i class="fa fa-instagram media-glyph"></i></a>
+		</footer>
     </div>
 </div>
 
