@@ -13,21 +13,34 @@
 	body {
 		font: 20px Montserrat, sans-serif;
 		line-height: 1.8;
-		font-size: 12px;
 		letter-spacing: 3px;
-		color: #E9F1F7;
+		color:#131b23
+	}
+	
+	p {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	
+	h1{
+		text-align:center; 
+		margin-bottom: 30px; 
+		margin-top:40px;
+		font-weight: bold;
+	}
+	
+	h2{
+		margin-top: 75px;
 	}
 
-	h3{
+	h3, h4{
 		margin-top:25px;
+		font-weight: bold;
 	}
 	
 	footer{
-		position: absolute;
-		bottom: 20px;
-		left: 0;
-		right: 0;
-		margin: auto;
+		text-align: center; 
+		margin-top: 50px;
 	}
 	
 	.media-glyph{
@@ -36,7 +49,7 @@
 	}
 	
 	.media-links{
-		color:#E9F1F7;
+		color:#131b23;
 	}
 	
 	.bgimg-1{
@@ -67,7 +80,14 @@
 		letter-spacing: 5px;
 		background-color: rgba(19,27,35,0.03);
 		color:#E9F1F7;
+		font-size: 12px;
 		width: 100%;
+	}
+	
+	.scrolled {
+	
+		background-color: rgb(19,27,35);
+	
 	}
 	
 	.navbar-nav  li a:hover{
@@ -84,35 +104,228 @@
 <!-- Navbar -->
 
 <!-- First Container -->
-<div class="container-fluid bgimg-1 text-center">
+<div class="container-fluid bgimg-1 text-center" id="introDiv">
   <div class="color-overlay">
 
-		<nav class="navbar navbar-default ">
+		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href=".">Khadir Williams</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="portfolio">PORTFOLIO</a></li>
-				<li><a href="resume">RESUME</a></li>
+				<li><a href="/portfolio">PORTFOLIO</a></li>
 			  </ul>
 			</div>
 		  </div>
 		</nav>
 		
-		<div class="container-fluid" style="display:inline-block; padding-top:110px;">
+		<div class="container-fluid" style="display:inline-block; padding-top:110px; color: #E9F1F7;">
 			<img src="profile.jpg" class="img-responsive img-circle" style="display:inline;" alt="Bird" width="350" height="350">
-			<h3>Student, Programmer, Web Developer</h3>
+			<h2>Student, Programmer, Web Developer</h2>
 		</div>
 	
-		
-		<footer>
-			<a href="https://www.linkedin.com/in/khadirwilliams" class="media-links"><i class="fa fa-linkedin-square media-glyph"></i></a>
-			<a href="https://github.com/kjw26" class="media-links"><i class="fa fa-github-square media-glyph"></i></a>
-		</footer>
     </div>
 </div>
+
+<div class="container" id ="content">
+	<!--<div class="row">
+		<div class="col-md-6 text-center">
+		
+			<h1 style="color:#131b23">Programming Languages</h1>
+			
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-6 text-center">
+		
+			<h1 style="color:#131b23">Skills</h1>
+			
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+			<div class="progress" style="width: 25%;">
+				<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+		</div>
+		
+	</div>	-->
+
+	<div class="row">
+	
+		<h1> Portfolio</h1>
+		
+		<div class="col-xs-2">
+		</div>
+		
+		<div class="col-xs-8">
+	
+			<h3>MealHunt</h3>
+			
+			<h5>January 2018 - Current</h5>
+			
+			<h4>Description</h4>
+			
+			<p>MealHunt is a entrepreneurship project started by myself and a classmate of mine for our Senior Capstone Course. MealHunt is an android application that makes it easier
+			   for friends to group up and decide on places to eat together. More information to come as the project evolves.</p>
+			
+			<h4>My Role</h4>
+			
+			<p>I operate as a project manager for this project, alongside my partner who shares this role with me. I not only work directly on the app itself, but I also prepare
+			   meeting agendas, requirements documents, take meeting minutes, scope out and set milsestones, and assign tasks to group members. The progress of the project is periodically reported
+			   to the capstone's executive team.
+			
+			<h4>Tools and Languages</h4>
+			
+			<p>Microsoft Project, Android Studio, Java, XML, PHP, MySQL and various APIs</p>
+			
+			<hr>
+			
+			<h3>WebMind</h3>
+			
+			<h5>September 2017 - December 2017</h5>
+			
+			<h4>Description</h4>
+			
+			<p>WebMind is a desktop application that allows a user to "play" Conway's Game of Life. The application, first, presents the user the with a grid where he or she can declare the initial state of the
+			   simulation. The user is then able to run the simulation and watch the board evolve. The application's GUI was written using Java Swing and the engine in C++. A script was also developed, in C++, that
+			   allows a user to initialize a board, but he or she cannot run the simualtion from the script.</p>
+			
+			<h4>My Role</h4>
+			
+			<p>For WebMind, I worked with other classmates to create the GUI in Java Swing. I also worked with the Honors College Group to create the script for the application. The script group was smaller so I was able
+			   able to work more intimately with that part of the project. We created a recursive decent parser in C++ to parse through script commands and create JSON strings. The JSON strings contain commands for the engine
+			   in a schema that the engine group had predetermined.</p>
+			
+			<h4>Tools and Languages</h4>
+			
+			<p>Java/Java Swing, C++, Git and Git Lab, Linux</p>
+			
+			<hr>
+			
+			<h3>Python Test Administrator</h3>
+			
+			<h5>September 2017 - December 2017</h5>
+			
+			<h4>Description</h4>
+			
+			<p>The Python Test Administrator is a web application that allows instructors to create and administer
+			   Python exams. Once an exam is created and released, a student can log in and take the test.
+			   The test is automatically graded upon submission.</p>
+			   
+			<h4>My Role</h4>
+
+			<p>On this project, I learned how to use AJAX, worked heavily with Javascript, and learned how to better 
+			   utilize HTML and CSS. This was done as a group project so the back-end portion was mostly done by my group members.</p>
+			
+			
+			<h4>Tools and Languages</h4>
+
+			<p>HTML, CSS, Javascript, PHP, AJAX, and MySQL</p>
+			
+			<hr>
+
+			<h3>Smaller Projects and Implementations</h3>
+			
+			<h4>Description</h4>
+			
+			<p>Over the course of my college career I have participated in a number of groups of clubs where I have written programs or websites. I have also undertaken some projects on my own. In this GitHub repository, I have 
+			   Compiled these small projects so that they can be viewed. All projects are not currently posted, I am working on getting as many up as I can.</p>
+			   
+			<h4>Tools and Languages</h4>
+
+			<p>Java, Socket API</p>
+			   
+			<h5 style="margin-top: 25px;"><a href="https://github.com/kjw26/Projects">Link to GitHub Repository</a></h5>
+			
+		</div>
+	
+		<div class="col-xs-2">
+		</div>
+	</div>
+</div>
+
+<footer>
+	<hr>
+	<a href="https://www.linkedin.com/in/khadirwilliams" class="media-links"><i class="fa fa-linkedin-square media-glyph"></i></a>
+	<a href="https://github.com/kjw26" class="media-links"><i class="fa fa-github-square media-glyph"></i></a>
+</footer>
+
+  <script>
+	var bottom = $('#introDiv').offset().top + $('#introDiv').height();
+
+	$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > bottom) {
+        $('.navbar').addClass('scrolled');
+    } else {
+        $('.navbar').removeClass('scrolled');
+    }
+
+	});
+	
+	$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+  </script>
 
 </body>
 </html>
